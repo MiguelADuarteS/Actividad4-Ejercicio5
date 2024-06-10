@@ -11,7 +11,7 @@ package co.edu.uniminuto.actividad4.ejercicio5;
 public class Productos {
     private int precio; 
     private byte cantidad; 
-    private String descripción;
+    private String descripcion;
 
     public Productos() {
     }
@@ -19,15 +19,15 @@ public class Productos {
     public Productos(int precio, byte cantidad, String descripción) {
         this.precio = precio;
         this.cantidad = cantidad;
-        this.descripción = descripción;
+        this.descripcion = descripcion;
     }
 
-    public String getDescripción() {
-        return descripción;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setDescripción(String descripción) {
-        this.descripción = descripción;
+    public void setDescripcion(String descripción) {
+        this.descripcion = descripcion;
     }
 
     public int getPrecio() {
@@ -52,7 +52,7 @@ public class Productos {
         sb.append("Productos{");
         sb.append("precio=").append(precio);
         sb.append(", cantidad=").append(cantidad);
-        sb.append(", descripci\u00f3n=").append(descripción);
+        sb.append(", descripcion=").append(descripcion);
         sb.append('}');
         return sb.toString();
     }
