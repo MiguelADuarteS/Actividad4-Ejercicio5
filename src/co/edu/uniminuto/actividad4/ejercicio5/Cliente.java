@@ -45,7 +45,19 @@ public class Cliente {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
+    public String nombre() {
+    String  nombre = this.nombre;
+        return nombre;
+    }
+    public String apellido() {
+    String  apellido = this.apellido;
+        return apellido;
+    }
+    public int documento() {
+    int documento = this.documento;
+        return documento;
+    }
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
