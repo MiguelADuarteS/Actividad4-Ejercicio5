@@ -8,54 +8,54 @@ package co.edu.uniminuto.actividad4.ejercicio5;
  *
  * @author mduar
  */
-public class Productos {
-    private int precio; 
-    private byte cantidad; 
-    private String descripcion;
+public class Producto {
 
-    public Productos() {
+   private String descripcion;
+    private double precio;
+    private int cantidad;
+
+    public Producto() {
     }
-    
-    public Productos(int precio, byte cantidad, String descripción) {
+
+    public Producto(String descripcion, double precio, int cantidad) {
+        this.descripcion = descripcion;
         this.precio = precio;
         this.cantidad = cantidad;
-        this.descripcion = descripcion;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 
     public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripción) {
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
-    }
-
-    public byte getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(byte cantidad) {
-        this.cantidad = cantidad;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Productos{");
-        sb.append("precio=").append(precio);
+        sb.append("Producto{");
+        sb.append("descripcion=").append(descripcion);
+        sb.append(", precio=").append(precio);
         sb.append(", cantidad=").append(cantidad);
-        sb.append(", descripcion=").append(descripcion);
         sb.append('}');
         return sb.toString();
     }
-    
-    
+
 }
