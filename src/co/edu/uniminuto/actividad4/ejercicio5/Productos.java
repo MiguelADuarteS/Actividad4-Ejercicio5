@@ -9,5 +9,7 @@ package co.edu.uniminuto.actividad4.ejercicio5;
  * @author mduar
  */
 public class Productos {
-    
+    int precio; 
+    byte cantidad; 
+    String descripción;
 }
