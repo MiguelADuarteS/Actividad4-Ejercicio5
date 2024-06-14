@@ -16,6 +16,8 @@ import javax.swing.JOptionPane;
 public class Ejercicio5 {
 
     private static String producto;
+    private static String getDescripcion;
+    private static String Producto;
 
     /*5. Calcular el valor a pagar de un cliente por su compra, se desea saber los productos que ha
 comprado: precio, cantidad, descripción. También el total a pagar y cálculo de impuestos,
@@ -48,7 +50,7 @@ adicional se debe tener el nombre, apellidos y documento del cliente.
         }
         float iva = (float) (0.19 * totalPagar);
         float total = (float) ((totalPagar) + iva);
-        JOptionPane.showInputDialog(cliente + "\n El subtotal de su compra por los productos: \n"
+        JOptionPane.showInputDialog(cliente + "\n El subtotal de su compra por los productos: \n"+Producto+
                 + totalPagar + "\n El iva de su compra es: \n" + iva
                 + "\n El total de su compra con IVA es: \n" + total);
 
